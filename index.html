@@ -3,120 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Densa Family — Консультации по правильному питанию в Алматы</title>
-    <meta name="description" content="Информационные услуги в сфере здорового образа жизни: индивидуальный подбор меню и коррекция привычек.">
+    <title>Densa Family — Информационные услуги по здоровому образу жизни</title>
+    <meta name="description" content="Консультационные услуги по подбору питания и коррекции образа жизни в Алматы.">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        :root { --primary: #2563eb; }
-        .bg-main { background: #f8fafc; }
-        .card { transition: all 0.3s ease; border: 1px solid #e2e8f0; }
-        .card:hover { border-color: var(--primary); transform: translateY(-4px); }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        :root { --primary: #2563eb; --slate-800: #1e293b; }
+        .bg-main { background: #ffffff; }
+        .card { 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            border: 1px solid #f1f5f9;
+            background: #ffffff;
+        }
+        .card:hover { 
+            border-color: #cbd5e1; 
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05);
+        }
+        .btn-hover { transition: all 0.3s ease; }
+        .btn-hover:hover { transform: scale(1.02); filter: brightness(1.1); }
     </style>
 </head>
-<body class="bg-main text-slate-900">
+<body class="bg-main text-slate-800 antialiased">
 
-    <header class="bg-white/95 sticky top-0 z-50 border-b border-slate-200 backdrop-blur-md">
+    <header class="bg-white/80 sticky top-0 z-50 border-b border-slate-100 backdrop-blur-lg">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <svg width="35" height="35" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="35" cy="30" r="12" fill="var(--primary)"/>
-                    <circle cx="65" cy="30" r="10" fill="#22C55E"/>
-                    <path d="M20 50C20 40 35 35 50 35C65 35 80 40 80 50C80 70 50 85 50 85C50 85 20 70 20 50Z" fill="var(--primary)"/>
-                </svg>
-                <span class="text-xl font-black tracking-tighter uppercase">Densa Family</span>
+            <div class="flex items-center gap-4">
+                <img src="image_2e65e3.png" alt="Densa Family Logo" class="h-10 w-auto">
+                <span class="text-xl font-extrabold tracking-tighter uppercase text-slate-900 hidden sm:block">Densa Family</span>
             </div>
-            <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" class="bg-blue-600 text-white px-6 py-2 rounded-xl font-bold text-sm hover:bg-blue-700 transition">
+            <nav class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-slate-500">
+                <a href="#services" class="hover:text-blue-600 transition">Услуги</a>
+                <a href="#contacts" class="hover:text-blue-600 transition">Контакты</a>
+            </nav>
+            <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold text-sm btn-hover shadow-lg shadow-blue-500/20">
                 Записаться
             </a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6 py-16 md:py-24">
-        <section class="text-center mb-24">
-            <h1 class="text-5xl md:text-7xl font-black text-slate-800 mb-8 tracking-tight leading-none">
-                Коррекция образа жизни <br class="hidden md:block"> для всей семьи
+    <main class="container mx-auto px-6">
+        
+        <section class="py-20 md:py-32 text-center max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-[1.1]">
+                Коррекция образа жизни <span class="text-blue-600 italic">для всей семьи</span>
             </h1>
-            <p class="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
-                Информационные услуги в сфере здорового образа жизни и индивидуальный подбор меню для активного долголетия.
+            <p class="text-xl text-slate-500 mb-12 leading-relaxed font-medium">
+                Информационные услуги в сфере здорового образа жизни, обучение принципам сбалансированного питания и индивидуальный подбор меню.
             </p>
-        </section>
-
-        <section id="services" class="grid md:grid-cols-3 gap-8 mb-24">
-            <div class="card bg-white p-10 rounded-[2.5rem]">
-                <h3 class="text-xl font-bold mb-4">Wellness-коучинг</h3>
-                <p class="text-slate-500 text-sm mb-6">Обучение принципам здорового питания и коррекция ежедневных привычек клиента.</p>
-                <div class="text-blue-600 font-bold">от 40 000 ₸</div>
-            </div>
-            <div class="card bg-white p-10 rounded-[2.5rem]">
-                <h3 class="text-xl font-bold mb-4">Разбор показателей</h3>
-                <p class="text-slate-500 text-sm mb-6">Информационная консультация по предоставленным данным для подбора рациона.</p>
-                <div class="text-blue-600 font-bold">50 000 ₸</div>
-            </div>
-            <div class="card bg-white p-10 rounded-[2.5rem]">
-                <h3 class="text-xl font-bold mb-4">Подбор меню</h3>
-                <p class="text-slate-500 text-sm mb-6">Индивидуальное составление рациона питания с учетом ваших целей и предпочтений.</p>
-                <div class="text-blue-600 font-bold">от 100 000 ₸</div>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#services" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold btn-hover">Посмотреть услуги</a>
             </div>
         </section>
 
-        <section class="max-w-3xl mx-auto bg-white rounded-[3rem] border border-slate-200 overflow-hidden mb-20">
-            <div class="p-8 md:p-12 space-y-4">
-                <div class="flex justify-between p-6 bg-slate-50 rounded-2xl">
-                    <span class="font-bold">Консультация (30 мин)</span>
-                    <span class="font-black text-blue-600 uppercase">40 000 ₸</span>
+        <section id="services" class="py-20 border-t border-slate-100">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-extrabold mb-4 uppercase tracking-tighter">Наши услуги</h2>
+                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10 mb-20">
+                <div class="card p-10 rounded-[2rem]">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">01</div>
+                    <h3 class="text-xl font-extrabold mb-4">Повторная консультация</h3>
+                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">Краткая информационная сессия (30 мин) для уточнения текущих вопросов и корректировки рациона.</p>
+                    <div class="text-2xl font-black text-slate-900 mb-6">40 000 ₸</div>
                 </div>
-                <div class="flex justify-between p-6 bg-slate-50 rounded-2xl">
-                    <span class="font-bold">Консультация (60 мин)</span>
-                    <span class="font-black text-blue-600 uppercase">50 000 ₸</span>
+
+                <div class="card p-10 rounded-[2rem] border-blue-100 shadow-xl shadow-blue-500/5">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 font-bold text-xl">02</div>
+                    <h3 class="text-xl font-extrabold mb-4">Стандартная консультация</h3>
+                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">Развернутая консультация (60 мин) по принципам здорового питания на основе ваших предпочтений.</p>
+                    <div class="text-2xl font-black text-slate-900 mb-6">50 000 ₸</div>
                 </div>
-                <div class="p-8 bg-blue-600 rounded-[2rem] text-white flex justify-between items-center">
-                    <div>
-                        <div class="font-black text-xl">Сопровождение</div>
-                        <div class="text-xs uppercase opacity-80">Информационная поддержка 1 месяц</div>
-                    </div>
-                    <div class="text-3xl font-black italic">от 100 000 ₸</div>
+
+                <div class="card p-10 rounded-[2rem]">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">03</div>
+                    <h3 class="text-xl font-extrabold mb-4">Индивидуальное сопровождение</h3>
+                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">Информационная поддержка в течение 1 месяца: обучение привычкам и адаптация меню.</p>
+                    <div class="text-2xl font-black text-slate-900 mb-6 text-blue-600">от 100 000 ₸</div>
                 </div>
-                <div class="pt-8 text-center">
-                    <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest mb-6">Оплата через систему Robokassa</p>
-                    <a href="https://t.me/Doctor_Guzaliia_bot" class="inline-block bg-slate-900 text-white font-black py-5 px-14 rounded-2xl w-full md:w-auto hover:bg-slate-800 transition">
-                        ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
-                    </a>
+            </div>
+
+            <div class="max-w-xl mx-auto text-center bg-slate-50 p-10 rounded-[3rem]">
+                <p class="text-[10px] text-slate-400 uppercase font-black tracking-[0.2em] mb-6">Оплата через систему Robokassa</p>
+                
+                <div class="flex justify-center gap-6 mb-8 opacity-40 grayscale">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-6">
                 </div>
+
+                <a href="https://t.me/Doctor_Guzaliia_bot" class="inline-block bg-blue-600 text-white font-extrabold py-5 px-12 rounded-2xl w-full hover:bg-blue-700 transition shadow-lg shadow-blue-600/20 uppercase tracking-tight">
+                    Записаться на консультацию
+                </a>
             </div>
         </section>
 
-        <div class="max-w-2xl mx-auto text-center mb-24 p-6 border-2 border-slate-100 rounded-3xl">
-            <p class="text-xs text-slate-400 font-bold leading-relaxed uppercase tracking-tighter">
-                Не является медицинской услугой. Рекомендации носят информационный характер. Перед применением рекомендаций и изменением рациона питания проконсультируйтесь со специалистом.
+        <div class="max-w-3xl mx-auto text-center mb-24 px-6 py-8 border border-dashed border-slate-200 rounded-3xl">
+            <p class="text-[11px] text-slate-400 font-bold leading-relaxed uppercase tracking-wider">
+                Не является медицинской услугой. Рекомендации носят исключительно информационный характер. <br>Перед применением любых изменений в рационе питания необходимо проконсультироваться со специалистом.
             </p>
         </div>
 
-        <section class="flex flex-wrap justify-center gap-x-12 gap-y-4 text-[10px] font-black uppercase tracking-widest text-slate-400">
-            <a href="https://personal-data-docs.vercel.app/dogovor.html" target="_blank" class="hover:text-blue-600 underline underline-offset-8">Публичная оферта</a>
-            <a href="https://personal-data-docs.vercel.app/politika.html" target="_blank" class="hover:text-blue-600 underline underline-offset-8">Политика данных</a>
-            <a href="https://personal-data-docs.vercel.app/soglasie.html" target="_blank" class="hover:text-blue-600 underline underline-offset-8">Согласие на ПД</a>
+        <section class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] font-black uppercase tracking-widest text-slate-400 mb-20">
+            <a href="https://personal-data-docs.vercel.app/dogovor.html" target="_blank" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Публичная оферта</a>
+            <a href="https://personal-data-docs.vercel.app/politika.html" target="_blank" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Политика конфиденциальности</a>
+            <a href="https://personal-data-docs.vercel.app/soglasie.html" target="_blank" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Согласие на обработку данных</a>
+            <a href="#" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Условия возврата</a>
         </section>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-16">
+    <footer id="contacts" class="bg-slate-900 text-white py-20">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between gap-12">
-                <div class="text-sm space-y-2">
-                    <p class="font-black uppercase tracking-widest text-xs mb-4">ТОО Densa Family</p>
-                    <p class="text-slate-500 italic">БИН: 250340027726</p>
-                    <p class="text-slate-500 italic">г. Алматы, ул. Розыбакиева, д. 250</p>
+            <div class="grid md:grid-cols-2 gap-16 items-start">
+                <div>
+                    <p class="text-blue-500 font-black uppercase tracking-[0.3em] text-xs mb-6">Реквизиты</p>
+                    <div class="space-y-3 text-slate-400 text-sm">
+                        <p class="text-white font-bold text-lg">ТОО Densa Family</p>
+                        <p>БИН: 250340027726</p>
+                        <p>Юридический адрес: Республика Казахстан, г. Алматы, Бостандыкский район, ул. Розыбакиева, д. 250</p>
+                    </div>
                 </div>
                 <div class="md:text-right">
-                    <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">Контакты</p>
-                    <a href="tel:+77074473483" class="text-3xl font-black text-slate-800 block mb-2">+7 (707) 447-34-83</a>
-                    <a href="mailto:nshakurov@gmail.com" class="text-slate-500 font-bold border-b border-slate-200">nshakurov@gmail.com</a>
+                    <p class="text-blue-500 font-black uppercase tracking-[0.3em] text-xs mb-6">Связаться с нами</p>
+                    <a href="tel:+77074473483" class="text-3xl md:text-4xl font-black text-white block mb-4 hover:text-blue-400 transition">+7 (707) 447-34-83</a>
+                    <a href="mailto:nshakurov@gmail.com" class="text-slate-400 font-medium border-b border-slate-700 pb-1 hover:text-white transition">nshakurov@gmail.com</a>
                 </div>
             </div>
-            <div class="mt-16 text-center text-[10px] text-slate-300 font-black uppercase tracking-[0.4em]">
+            <div class="mt-20 pt-8 border-t border-slate-800 text-center text-[10px] text-slate-500 font-bold uppercase tracking-[0.5em]">
                 &copy; 2026 Densa Family. Все права защищены.
             </div>
         </div>
