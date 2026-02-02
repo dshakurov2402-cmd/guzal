@@ -3,138 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Densa Family — Информационные услуги по здоровому образу жизни</title>
-    <meta name="description" content="Консультационные услуги по подбору питания и коррекции образа жизни в Алматы.">
+    <title>Densa Family — Консультации по правильному питанию в Алматы</title>
+    <meta name="description" content="Информационные услуги по подбору питания и коррекции образа жизни в Алматы.">
     
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
-        :root { --primary: #2563eb; --slate-800: #1e293b; }
-        .bg-main { background: #ffffff; }
+        
         .card { 
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+            transition: all 0.3s ease; 
             border: 1px solid #f1f5f9;
-            background: #ffffff;
         }
         .card:hover { 
-            border-color: #cbd5e1; 
-            transform: translateY(-8px);
+            transform: translateY(-5px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05);
+            border-color: #e2e8f0;
         }
-        .btn-hover { transition: all 0.3s ease; }
-        .btn-hover:hover { transform: scale(1.02); filter: brightness(1.1); }
+        .btn-main {
+            transition: all 0.2s ease;
+            border-radius: 12px;
+        }
+        .btn-main:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+        }
     </style>
 </head>
-<body class="bg-main text-slate-800 antialiased">
+<body class="bg-white text-slate-800 antialiased">
 
-    <header class="bg-white/80 sticky top-0 z-50 border-b border-slate-100 backdrop-blur-lg">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-4">
-                <img src="image_2e65e3.png" alt="Densa Family Logo" class="h-10 w-auto">
-                <span class="text-xl font-extrabold tracking-tighter uppercase text-slate-900 hidden sm:block">Densa Family</span>
+    <header class="bg-white/90 sticky top-0 z-50 border-b border-slate-100 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
+            <div class="flex items-center">
+                <img src="image_384fe6.png" alt="Densa Family" class="h-12 w-auto">
             </div>
-            <nav class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-slate-500">
+            
+            <nav class="flex gap-8 text-[11px] font-bold uppercase tracking-widest text-slate-500">
                 <a href="#services" class="hover:text-blue-600 transition">Услуги</a>
                 <a href="#contacts" class="hover:text-blue-600 transition">Контакты</a>
             </nav>
-            <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-bold text-sm btn-hover shadow-lg shadow-blue-500/20">
-                Записаться
+
+            <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" class="bg-blue-600 text-white px-6 py-3 btn-main font-bold text-xs uppercase tracking-tight shadow-md">
+                Запись на консультацию
             </a>
         </div>
     </header>
 
-    <main class="container mx-auto px-6">
-        
-        <section class="py-20 md:py-32 text-center max-w-4xl mx-auto">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-[1.1]">
-                Коррекция образа жизни <span class="text-blue-600 italic">для всей семьи</span>
+    <main>
+        <section class="container mx-auto px-6 py-20 md:py-28 text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mb-8 leading-tight">
+                Консультации по <span class="text-blue-600">правильному питанию</span> в Алматы
             </h1>
-            <p class="text-xl text-slate-500 mb-12 leading-relaxed font-medium">
-                Информационные услуги в сфере здорового образа жизни, обучение принципам сбалансированного питания и индивидуальный подбор меню.
+            <p class="text-lg md:text-xl text-slate-500 mb-10 leading-relaxed max-w-2xl mx-auto">
+                Обучение принципам здорового образа жизни, индивидуальный подбор рациона и профессиональное сопровождение.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#services" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold btn-hover">Посмотреть услуги</a>
+            <div class="flex justify-center">
+                <a href="#services" class="bg-slate-900 text-white px-10 py-4 btn-main font-bold">Выбрать формат</a>
             </div>
         </section>
 
-        <section id="services" class="py-20 border-t border-slate-100">
+        <section id="services" class="container mx-auto px-6 py-20 border-t border-slate-50">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold mb-4 uppercase tracking-tighter">Наши услуги</h2>
-                <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+                <h2 class="text-3xl font-extrabold mb-4 uppercase tracking-tighter text-slate-900">Услуги и стоимость</h2>
+                <div class="h-1.5 w-16 bg-blue-600 mx-auto rounded-full"></div>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-10 mb-20">
-                <div class="card p-10 rounded-[2rem]">
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">01</div>
-                    <h3 class="text-xl font-extrabold mb-4">Повторная консультация</h3>
-                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">Краткая информационная сессия (30 мин) для уточнения текущих вопросов и корректировки рациона.</p>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card p-8 rounded-3xl flex flex-col">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 leading-tight">Укороченная (повторная) консультация</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">
+                        Продолжительность: 30 минут. Корректировка текущего рациона, ответы на вопросы по внедренным изменениям.
+                    </p>
                     <div class="text-2xl font-black text-slate-900 mb-6">40 000 ₸</div>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" class="block text-center border-2 border-slate-900 text-slate-900 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Записаться</a>
                 </div>
 
-                <div class="card p-10 rounded-[2rem] border-blue-100 shadow-xl shadow-blue-500/5">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-xl flex items-center justify-center mb-6 font-bold text-xl">02</div>
-                    <h3 class="text-xl font-extrabold mb-4">Стандартная консультация</h3>
-                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">Развернутая консультация (60 мин) по принципам здорового питания на основе ваших предпочтений.</p>
+                <div class="card p-8 rounded-3xl border-blue-600 ring-1 ring-blue-600/10 flex flex-col relative overflow-hidden">
+                    <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-bold px-4 py-1 rounded-bl-lg uppercase">Популярно</div>
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 leading-tight">Стандартная консультация</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">
+                        Продолжительность: 60 минут. Полный разбор текущего питания, составление персональных рекомендаций и обучение основам.
+                    </p>
                     <div class="text-2xl font-black text-slate-900 mb-6">50 000 ₸</div>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" class="block text-center bg-blue-600 text-white py-3 rounded-xl font-bold btn-main shadow-lg shadow-blue-200">Записаться</a>
                 </div>
 
-                <div class="card p-10 rounded-[2rem]">
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-6 font-bold text-xl">03</div>
-                    <h3 class="text-xl font-extrabold mb-4">Индивидуальное сопровождение</h3>
-                    <p class="text-slate-500 text-sm mb-8 leading-relaxed">Информационная поддержка в течение 1 месяца: обучение привычкам и адаптация меню.</p>
-                    <div class="text-2xl font-black text-slate-900 mb-6 text-blue-600">от 100 000 ₸</div>
+                <div class="card p-8 rounded-3xl flex flex-col">
+                    <h3 class="text-xl font-bold mb-4 text-slate-900 leading-tight">Индивидуальное сопровождение</h3>
+                    <p class="text-slate-500 text-sm mb-6 flex-grow">
+                        Срок: от 1 месяца. Ежедневная поддержка, обучение привычкам, адаптация меню и долгосрочный контроль результата.
+                    </p>
+                    <div class="text-2xl font-black text-blue-600 mb-6">от 100 000 ₸</div>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" class="block text-center border-2 border-slate-900 text-slate-900 py-3 rounded-xl font-bold hover:bg-slate-900 hover:text-white transition">Записаться</a>
                 </div>
-            </div>
-
-            <div class="max-w-xl mx-auto text-center bg-slate-50 p-10 rounded-[3rem]">
-                <p class="text-[10px] text-slate-400 uppercase font-black tracking-[0.2em] mb-6">Оплата через систему Robokassa</p>
-                
-                <div class="flex justify-center gap-6 mb-8 opacity-40 grayscale">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-6">
-                </div>
-
-                <a href="https://t.me/Doctor_Guzaliia_bot" class="inline-block bg-blue-600 text-white font-extrabold py-5 px-12 rounded-2xl w-full hover:bg-blue-700 transition shadow-lg shadow-blue-600/20 uppercase tracking-tight">
-                    Записаться на консультацию
-                </a>
             </div>
         </section>
 
-        <div class="max-w-3xl mx-auto text-center mb-24 px-6 py-8 border border-dashed border-slate-200 rounded-3xl">
-            <p class="text-[11px] text-slate-400 font-bold leading-relaxed uppercase tracking-wider">
-                Не является медицинской услугой. Рекомендации носят исключительно информационный характер. <br>Перед применением любых изменений в рационе питания необходимо проконсультироваться со специалистом.
-            </p>
-        </div>
+        <section class="container mx-auto px-6 py-10">
+            <div class="max-w-2xl mx-auto text-center bg-slate-50 p-10 rounded-[2rem]">
+                <p class="text-[10px] text-slate-400 uppercase font-black tracking-widest mb-6">Оплата через систему Robokassa</p>
+                <div class="flex justify-center items-center gap-8 mb-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" class="h-5 opacity-60">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" class="h-8 opacity-60">
+                </div>
+            </div>
+        </section>
 
-        <section class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-[10px] font-black uppercase tracking-widest text-slate-400 mb-20">
-            <a href="https://personal-data-docs.vercel.app/dogovor.html" target="_blank" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Публичная оферта</a>
-            <a href="https://personal-data-docs.vercel.app/politika.html" target="_blank" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Политика конфиденциальности</a>
-            <a href="https://personal-data-docs.vercel.app/soglasie.html" target="_blank" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Согласие на обработку данных</a>
-            <a href="#" class="hover:text-blue-600 border-b border-transparent hover:border-blue-600 transition pb-1">Условия возврата</a>
+        <section class="container mx-auto px-6 py-12">
+            <div class="max-w-3xl mx-auto text-center p-8 border border-slate-100 rounded-3xl">
+                <p class="text-[12px] text-slate-400 font-medium leading-relaxed">
+                    <strong>Дисклеймер:</strong> Не является медицинской услугой. Перед применением рекомендаций проконсультируйтесь со специалистом. Информация на сайте носит ознакомительный характер и направлена на обучение принципам здорового питания.
+                </p>
+            </div>
         </section>
     </main>
 
-    <footer id="contacts" class="bg-slate-900 text-white py-20">
+    <footer id="contacts" class="bg-slate-900 text-white pt-20 pb-10">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-start">
+            <div class="grid md:grid-cols-2 gap-12 border-b border-slate-800 pb-16">
                 <div>
-                    <p class="text-blue-500 font-black uppercase tracking-[0.3em] text-xs mb-6">Реквизиты</p>
-                    <div class="space-y-3 text-slate-400 text-sm">
-                        <p class="text-white font-bold text-lg">ТОО Densa Family</p>
+                    <h4 class="text-blue-500 font-black uppercase tracking-widest text-xs mb-6">Реквизиты</h4>
+                    <div class="space-y-2 text-slate-400 text-sm leading-loose">
+                        <p class="text-white font-bold text-base">ТОО "Densa Family"</p>
                         <p>БИН: 250340027726</p>
                         <p>Юридический адрес: Республика Казахстан, г. Алматы, Бостандыкский район, ул. Розыбакиева, д. 250</p>
                     </div>
                 </div>
                 <div class="md:text-right">
-                    <p class="text-blue-500 font-black uppercase tracking-[0.3em] text-xs mb-6">Связаться с нами</p>
-                    <a href="tel:+77074473483" class="text-3xl md:text-4xl font-black text-white block mb-4 hover:text-blue-400 transition">+7 (707) 447-34-83</a>
-                    <a href="mailto:nshakurov@gmail.com" class="text-slate-400 font-medium border-b border-slate-700 pb-1 hover:text-white transition">nshakurov@gmail.com</a>
+                    <h4 class="text-blue-500 font-black uppercase tracking-widest text-xs mb-6">Связь</h4>
+                    <a href="tel:+77074473483" class="text-2xl md:text-3xl font-bold text-white block mb-4 hover:text-blue-400 transition">+7 (707) 447-34-83</a>
+                    <a href="mailto:nshakurov@gmail.com" class="text-slate-400 hover:text-white transition border-b border-slate-700">nshakurov@gmail.com</a>
                 </div>
             </div>
-            <div class="mt-20 pt-8 border-t border-slate-800 text-center text-[10px] text-slate-500 font-bold uppercase tracking-[0.5em]">
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 py-8 text-[11px] font-bold uppercase tracking-wider text-slate-500">
+                <a href="https://personal-data-docs.vercel.app/politika.html" target="_blank" class="hover:text-blue-400 transition">Политика конфиденциальности</a>
+                <a href="https://personal-data-docs.vercel.app/dogovor.html" target="_blank" class="hover:text-blue-400 transition">Публичная оферта</a>
+                <a href="https://personal-data-docs.vercel.app/soglasie.html" target="_blank" class="hover:text-blue-400 transition">Согласие на обработку ПД</a>
+            </div>
+
+            <div class="text-center text-[10px] text-slate-600 uppercase tracking-[0.4em] mt-4">
                 &copy; 2026 Densa Family. Все права защищены.
             </div>
         </div>
