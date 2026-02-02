@@ -3,13 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Densa Family — Интегративная диетология и нутрициология</title>
-    <meta name="description" content="Профессиональные консультации нутрициолога, анализ биомаркеров и разработка индивидуальных планов питания от Densa Family.">
-    
-    <meta property="og:title" content="Densa Family — Здоровье всей семьи">
-    <meta property="og:description" content="Индивидуальные рационы и работа с показателями организма.">
-    <meta property="og:type" content="website">
+    <title>Densa Family — Интегративная диетология</title>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -18,129 +12,121 @@
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
         .bg-medical { background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); }
-        .service-card { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .service-card:hover { transform: translateY(-8px); }
-        .fade-in { animation: fadeIn 0.8s ease-out; }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+        .service-card { transition: all 0.3s ease; border: 1px solid #e2e8f0; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
     </style>
 </head>
 <body class="bg-medical min-h-screen text-slate-900">
 
     <header class="glass sticky top-0 z-50 border-b border-blue-100">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <img src="image_2ddbdb.png" alt="Densa Family Logo" class="h-12 md:h-16 object-contain">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="35" cy="30" r="12" fill="#3B82F6"/>
+                    <circle cx="65" cy="30" r="10" fill="#22C55E"/>
+                    <path d="M20 50C20 40 35 35 50 35C65 35 80 40 80 50C80 70 50 85 50 85C50 85 20 70 20 50Z" fill="#0EA5E9"/>
+                    <path d="M50 85C35 75 25 60 25 50C25 45 35 42 50 42C65 42 75 45 75 50C75 60 65 75 50 85Z" fill="white" fill-opacity="0.3"/>
+                </svg>
+                <span class="text-2xl font-bold text-slate-800 tracking-tighter">DENSA<span class="text-blue-600">FAMILY</span></span>
             </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-600">
-                <a href="#services" class="hover:text-blue-600 transition">Услуги</a>
-                <a href="#prices" class="hover:text-blue-600 transition">Стоимость</a>
-                <a href="#contacts" class="hover:text-blue-600 transition">Контакты</a>
-            </nav>
             <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" rel="noopener noreferrer" 
-               class="bg-blue-600 text-white px-6 py-2.5 rounded-xl hover:bg-blue-700 transition shadow-lg shadow-blue-200 font-semibold text-sm">
+               class="bg-blue-600 text-white px-6 py-2.5 rounded-xl hover:bg-blue-700 transition font-bold text-sm shadow-lg shadow-blue-100">
                 Записаться
             </a>
         </div>
     </header>
 
     <main class="container mx-auto px-6 py-12 md:py-20">
-        <section class="text-center mb-20 fade-in">
-            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 uppercase bg-blue-50 rounded-full">Интегративный подход</span>
-            <h1 class="text-4xl md:text-7xl font-extrabold text-slate-800 mb-6 leading-tight">
-                Здоровье всей семьи <br class="hidden md:block"> в надежных руках
+        <section class="text-center mb-20">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-slate-800 mb-8 leading-tight tracking-tight">
+                Здоровье всей семьи <br class="hidden md:block text-blue-600"> в надежных руках
             </h1>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Профессиональные консультации, глубокая работа с показателями и индивидуальные рационы для долгой и активной жизни.
+            <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Профессиональные консультации, глубокая работа с показателями и разработка индивидуальных рационов для долгой и активной жизни.
             </p>
-            <div class="flex flex-col md:flex-row justify-center gap-4">
-                <a href="#services" class="px-8 py-4 bg-slate-800 text-white rounded-2xl font-bold hover:bg-slate-700 transition">Услуги</a>
-                <a href="https://t.me/Doctor_Guzaliia_bot" class="px-8 py-4 bg-white text-blue-600 border border-blue-100 rounded-2xl font-bold hover:bg-blue-50 transition">Консультация в TG</a>
-            </div>
         </section>
 
         <section id="services" class="grid md:grid-cols-3 gap-8 mb-24">
-            <div class="service-card bg-white p-8 rounded-[2.5rem] shadow-sm border border-blue-50">
-                <div class="w-14 h-14 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 text-xl font-bold">01</div>
-                <h3 class="text-xl font-bold mb-3">ЗОЖ Консультации</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">Коррекция ежедневных привычек и разработка стратегии оздоровления организма.</p>
+            <div class="service-card bg-white p-10 rounded-[2.5rem]">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 text-lg font-bold">01</div>
+                <h3 class="text-xl font-bold text-slate-800 mb-4">ЗОЖ Консультации</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Коррекция ежедневных привычек и разработка индивидуальной стратегии оздоровления организма.</p>
             </div>
-            <div class="service-card bg-white p-8 rounded-[2.5rem] shadow-sm border border-blue-50">
-                <div class="w-14 h-14 bg-green-50 rounded-2xl flex items-center justify-center text-green-600 mb-6 text-xl font-bold">02</div>
-                <h3 class="text-xl font-bold mb-3">Анализ биомаркеров</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">Интерпретация лабораторных данных и выявление скрытых дефицитов.</p>
+            <div class="service-card bg-white p-10 rounded-[2.5rem]">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 text-lg font-bold">02</div>
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Анализ биомаркеров</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Интерпретация ваших показателей и выявление скрытых дефицитов для точной коррекции состояния.</p>
             </div>
-            <div class="service-card bg-white p-8 rounded-[2.5rem] shadow-sm border border-blue-50">
-                <div class="w-14 h-14 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 mb-6 text-xl font-bold">03</div>
-                <h3 class="text-xl font-bold mb-3">Планы питания</h3>
-                <p class="text-slate-600 leading-relaxed text-sm">Индивидуальные меню, адаптированные под ваши цели и образ жизни.</p>
+            <div class="service-card bg-white p-10 rounded-[2.5rem]">
+                <div class="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 text-lg font-bold">03</div>
+                <h3 class="text-xl font-bold text-slate-800 mb-4">Планы питания</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Индивидуальный рацион, полностью адаптированный под текущие потребности вашего организма.</p>
             </div>
         </section>
 
-        <section id="prices" class="max-w-4xl mx-auto bg-white rounded-[3rem] shadow-2xl shadow-blue-900/10 overflow-hidden mb-24">
-            <div class="bg-slate-800 p-10 text-white text-center">
-                <h2 class="text-3xl font-bold tracking-tight">Стоимость услуг</h2>
+        <section id="prices" class="max-w-3xl mx-auto bg-white rounded-[3rem] shadow-2xl shadow-blue-900/5 overflow-hidden mb-24">
+            <div class="bg-slate-800 py-10 text-white text-center">
+                <h2 class="text-2xl font-bold uppercase tracking-[0.2em]">Стоимость услуг</h2>
             </div>
-            <div class="p-8 md:p-12 space-y-4">
+            <div class="p-8 md:p-12 space-y-5">
                 <div class="flex justify-between items-center p-6 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-100 transition">
-                    <span class="font-semibold text-slate-700">Консультация (30 мин)</span>
-                    <span class="text-xl font-bold text-blue-600">40 000 ₸</span>
+                    <span class="font-semibold text-slate-700 italic">Консультация (30 минут)</span>
+                    <span class="text-2xl font-bold text-blue-600">40 000 ₸</span>
                 </div>
                 <div class="flex justify-between items-center p-6 bg-slate-50 rounded-2xl border border-transparent hover:border-blue-100 transition">
-                    <span class="font-semibold text-slate-700">Консультация (60 мин)</span>
-                    <span class="text-xl font-bold text-blue-600">50 000 ₸</span>
+                    <span class="font-semibold text-slate-700 italic">Консультация (60 минут)</span>
+                    <span class="text-2xl font-bold text-blue-600">50 000 ₸</span>
                 </div>
-                <div class="flex flex-col md:flex-row justify-between md:items-center p-7 bg-blue-600 rounded-3xl text-white gap-4">
+                <div class="flex flex-col md:flex-row justify-between md:items-center p-8 bg-blue-600 rounded-[2rem] text-white gap-4">
                     <div>
                         <span class="font-bold text-xl block">Сопровождение (1 месяц)</span>
-                        <span class="text-blue-100 text-sm italic">Премиальный формат ведения до результата</span>
+                        <span class="text-blue-100 text-xs uppercase tracking-wider font-medium">Ведение до результата</span>
                     </div>
-                    <span class="text-3xl font-black italic">от 100 000 ₸</span>
+                    <span class="text-3xl font-black tracking-tight italic">от 100 000 ₸</span>
                 </div>
 
-                <div class="mt-12 p-8 border-2 border-dashed border-slate-200 rounded-[2.5rem] text-center">
-                    <h4 class="font-bold text-slate-800 mb-2 text-lg">Удобная онлайн-оплата</h4>
-                    <p class="text-slate-600 mb-8">Платежи принимаются официально через систему <strong>Robokassa</strong>.</p>
-                    <a href="https://t.me/Doctor_Guzaliia_bot" class="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-5 px-12 rounded-2xl transition-all shadow-xl shadow-green-100 w-full md:w-auto transform hover:scale-105">
-                        Записаться на консультацию
+                <div class="mt-10 p-8 border-2 border-dashed border-slate-100 rounded-[2.5rem] text-center">
+                    <p class="text-slate-500 text-sm mb-8 font-medium">Официальный прием платежей через <strong>Robokassa</strong>.</p>
+                    <a href="https://t.me/Doctor_Guzaliia_bot" target="_blank" rel="noopener noreferrer" 
+                       class="inline-block bg-green-500 hover:bg-green-600 text-white font-black py-5 px-14 rounded-2xl transition-all w-full md:w-auto shadow-xl shadow-green-100 transform hover:scale-105">
+                        ЗАПИСАТЬСЯ НА КОНСУЛЬТАЦИЮ
                     </a>
                 </div>
             </div>
         </section>
 
-        <section class="flex flex-col items-center gap-6 mb-20">
-            <span class="text-xs font-black text-slate-400 uppercase tracking-[0.2em]">Юридическая информация</span>
-            <div class="flex flex-wrap justify-center gap-x-10 gap-y-3 text-sm font-medium">
-                <a href="https://personal-data-docs.vercel.app/dogovor.html" target="_blank" class="text-slate-500 hover:text-blue-600 transition decoration-blue-200 underline underline-offset-8">Публичная оферта</a>
-                <a href="https://personal-data-docs.vercel.app/politika.html" target="_blank" class="text-slate-500 hover:text-blue-600 transition decoration-blue-200 underline underline-offset-8">Политика обработки данных</a>
-                <a href="https://personal-data-docs.vercel.app/soglasie.html" target="_blank" class="text-slate-500 hover:text-blue-600 transition decoration-blue-200 underline underline-offset-8">Согласие на обработку ПД</a>
-            </div>
+        <section class="flex flex-wrap justify-center gap-x-12 gap-y-4 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-20">
+            <a href="https://personal-data-docs.vercel.app/dogovor.html" class="hover:text-blue-600 transition underline underline-offset-8">Публичная оферта</a>
+            <a href="https://personal-data-docs.vercel.app/politika.html" class="hover:text-blue-600 transition underline underline-offset-8">Политика данных</a>
+            <a href="https://personal-data-docs.vercel.app/soglasie.html" class="hover:text-blue-600 transition underline underline-offset-8">Согласие на ПД</a>
         </section>
     </main>
 
-    <footer id="contacts" class="bg-white border-t border-slate-100 py-16">
+    <footer class="bg-white border-t border-slate-100 py-20">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-start">
-                <div>
-                    <img src="image_2ddbdb.png" alt="Densa Family" class="h-12 mb-6 grayscale hover:grayscale-0 transition duration-500">
-                    <div class="space-y-3 text-slate-600">
-                        <p class="font-bold text-slate-900">ТОО Densa Family</p>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="space-y-6">
+                    <div class="flex items-center gap-2">
+                        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="35" cy="30" r="12" fill="#cbd5e1"/>
+                            <circle cx="65" cy="30" r="10" fill="#94a3b8"/>
+                            <path d="M20 50C20 40 35 35 50 35C65 35 80 40 80 50C80 70 50 85 50 85C50 85 20 70 20 50Z" fill="#64748b"/>
+                        </svg>
+                        <span class="text-xl font-black text-slate-800 tracking-tighter">DENSA FAMILY</span>
+                    </div>
+                    <div class="text-slate-500 space-y-2 text-sm">
+                        <p class="font-bold text-slate-900 uppercase tracking-widest text-xs">ТОО Densa Family</p>
                         <p>БИН: 250340027726</p>
                         <p>г. Алматы, ул. Розыбакиева, д. 250</p>
                     </div>
                 </div>
-                <div class="md:text-right flex flex-col md:items-end">
-                    <h3 class="text-lg font-bold text-slate-900 mb-6 uppercase tracking-widest">Контакты</h3>
-                    <div class="space-y-4">
-                        <a href="tel:+77074473483" class="text-3xl font-black text-blue-600 block hover:text-blue-700 transition tracking-tighter">+7 (707) 447-34-83</a>
-                        <a href="mailto:nshakurov@gmail.com" class="text-lg text-slate-600 hover:text-blue-600 transition underline underline-offset-4 font-medium">nshakurov@gmail.com</a>
-                    </div>
+                <div class="md:text-right flex flex-col md:items-end justify-center">
+                    <a href="tel:+77074473483" class="text-4xl font-black text-blue-600 mb-4 hover:text-blue-700 transition tracking-tighter">+7 (707) 447-34-83</a>
+                    <a href="mailto:nshakurov@gmail.com" class="text-slate-400 font-bold hover:text-blue-600 transition border-b-2 border-slate-100">nshakurov@gmail.com</a>
                 </div>
             </div>
-            <div class="mt-20 pt-8 border-t border-slate-50 text-center">
-                <p class="text-xs text-slate-400 font-bold tracking-widest uppercase">
+            <div class="mt-20 pt-10 border-t border-slate-50 text-center">
+                <p class="text-[10px] text-slate-300 font-black uppercase tracking-[0.4em]">
                     &copy; 2026 Densa Family. Все права защищены.
                 </p>
             </div>
